@@ -3,6 +3,7 @@ import {GeoJSON} from "react-leaflet";
 import ReactDOMServer from "react-dom/server";
 import {GeoJsonDataContext} from "../App.jsx";
 import DataPopup from "./DataPopup.jsx";
+
 function GeoJsonLayer() {
     const {geoJsonDataContext} = useContext(GeoJsonDataContext);
     const [geoJsonLayerKey, setGeoJsonLayerKey] = useState(0);

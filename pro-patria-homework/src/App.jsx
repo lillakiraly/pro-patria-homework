@@ -3,6 +3,7 @@ import Map from "./components/Map.jsx";
 import "leaflet/dist/leaflet.css";
 import geoDataStore from "../data/geojson/geodatastore.json";
 import AddDataButton from "./components/AddDataButton.jsx";
+import ResetDataButton from "./components/ResetDataButton.jsx";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     return (
         <GeoJsonDataContext.Provider value={{geoJsonDataContext, setGeoJsonDataContext}}>
             <AddDataButton/>
+            <ResetDataButton resetTo={geoDataStore} />
             <Map/>
         </GeoJsonDataContext.Provider>
     )
