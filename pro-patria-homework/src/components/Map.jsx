@@ -1,4 +1,5 @@
 import {MapContainer, TileLayer} from "react-leaflet";
+import GeoJsonLayer from "./GeoJsonLayer.jsx";
 import "./Map.css";
 
 function Map() {
@@ -9,6 +10,7 @@ function Map() {
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}/>
+            <GeoJsonLayer/>
         </MapContainer>
     )
 }
