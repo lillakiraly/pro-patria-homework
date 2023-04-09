@@ -4,8 +4,8 @@ import "./Map.css";
 
 function Map() {
     return (
-        <MapContainer center={[51.505, -0.09]}
-                      zoom={2}
+        <MapContainer center={[47.50974, 19.08128]}
+                      zoom={13}
                       scrollWheelZoom={false}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
