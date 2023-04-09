@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import Map from "./components/Map.jsx";
+import "leaflet/dist/leaflet.css";
+
 
 function App() {
-  return (
-     <Map/>
-  )
+    return (
+        <Map/>
+    )
 }
 
 export default App
