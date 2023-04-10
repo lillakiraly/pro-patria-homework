@@ -1,7 +1,7 @@
 # react-geomap
 
 ## About
-react-geomap is a project, that shows GeoJSON data, and information about them on a map.
+**react-geomap** is a project, that shows GeoJSON data, and information about them on a map.
 
 The project uses the Leaflet API as the base for the map, and OpenStreetMap as the tile layer for the map. 
 
@@ -38,3 +38,8 @@ The project will be hosted on http://localhost:5173/.
 
 ## Limitations
 - At the moment only Feature Objects can be added to the map.
+
+## Helpful Links
+- GeoJSON: https://geojson.org/ 
+- GeoJSON Feature Object: https://www.rfc-editor.org/rfc/rfc7946#section-3.2 
+
