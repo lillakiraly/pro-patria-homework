@@ -1,7 +1,8 @@
 # react-geomap
 
 ## About
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) application
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
 **react-geomap** is a project, that shows GeoJSON data, and information about them on a map.
 
 The project uses the Leaflet API as the base for the map, and OpenStreetMap as the tile layer for the map. 
