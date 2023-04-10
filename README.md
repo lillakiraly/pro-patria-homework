@@ -16,7 +16,7 @@ The project uses the Leaflet API as the base for the map, and OpenStreetMap as t
 ### Setup
 1. Clone the repository
 
-2. Navigate to the root directory and run the following command to install the reqiuired packages/dependencies
+2. Navigate to the root directory and run the following command to install the required packages/dependencies
 ```sh
 npm install
 ```
