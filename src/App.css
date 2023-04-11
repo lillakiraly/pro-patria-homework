@@ -1,7 +1,13 @@
-#feat-btn-container {
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app .feat-btn-container {
     display: flex;
 }
 
-#feat-btn-container button {
+.app .feat-btn-container button {
     margin: 10px 5px;
 }

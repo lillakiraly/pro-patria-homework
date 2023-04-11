@@ -26,13 +26,15 @@ function App() {
     }, [geoJsonDataContext]);
 
     return (
-        <GeoJsonDataContext.Provider value={{geoJsonDataContext, setGeoJsonDataContext}}>
-            <div id="feat-btn-container">
-                <AddDataButton/>
-                <ResetDataButton resetTo={initialData}/>
-            </div>
-            <Map/>
-        </GeoJsonDataContext.Provider>
+        <div className="app">
+            <GeoJsonDataContext.Provider value={{geoJsonDataContext, setGeoJsonDataContext}}>
+                <div className="feat-btn-container">
+                    <AddDataButton/>
+                    <ResetDataButton resetTo={initialData}/>
+                </div>
+                <Map/>
+            </GeoJsonDataContext.Provider>
+        </div>
     )
 }
 

@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 import "./DataPopup.css";
 
 function DataPopup(props) {
@@ -6,11 +6,13 @@ function DataPopup(props) {
 
     if (Object.keys(properties).length > 0) {
         return (
-            <ul>
-                {Object.keys(properties).map((key) => (
-                    <li key={uuidv4()}><span className="property">{key}</span>: {properties[key]}</li>
-                ))}
-            </ul>
+            <div className="data-popup">
+                <ul>
+                    {Object.keys(properties).map((key) => (
+                        <li key={uuidv4()}><span className="property">{key}</span>: {properties[key]}</li>
+                    ))}
+                </ul>
+            </div>
         )
     } else {
         return (
