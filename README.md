@@ -39,9 +39,10 @@ The project will be hosted on http://localhost:5173/.
 
 
 ## Limitations
-- At the moment only Feature Objects can be added to the map.
+- At the moment, Feature and FeatureCollection Objects can be added to the map.
 
 ## Helpful Links
 - GeoJSON: https://geojson.org/ 
 - GeoJSON Feature Object: https://www.rfc-editor.org/rfc/rfc7946#section-3.2 
+- GeoJSON FeatureCollection Object: https://www.rfc-editor.org/rfc/rfc7946#section-3.3
 
