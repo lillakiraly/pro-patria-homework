@@ -8,28 +8,27 @@ import ResetDataButton from "./components/ResetDataButton.jsx";
 
 function App() {
 
+    const initialData = geoDataStore.geoData;
+
     const [geoJsonDataContext, setGeoJsonDataContext] = useState(
         () => JSON.parse(localStorage.getItem("geoData")));
 
+
     useEffect(() => {
-        if (localStorage.getItem("geoData") === null) {
-            const geoDataStoreStr = JSON.stringify(geoDataStore);
-            localStorage.setItem("geoData", geoDataStoreStr);
-            setGeoJsonDataContext(geoDataStore);
+        if (geoJsonDataContext === null) {
+            setGeoJsonDataContext(initialData);
         }
     }, []);
 
     useEffect(() => {
-        if (geoJsonDataContext !== "null") {
-            localStorage.setItem("geoData", JSON.stringify(geoJsonDataContext));
-        }
+        localStorage.setItem("geoData", JSON.stringify(geoJsonDataContext));
     }, [geoJsonDataContext]);
 
     return (
         <GeoJsonDataContext.Provider value={{geoJsonDataContext, setGeoJsonDataContext}}>
             <div id="feat-btn-container">
                 <AddDataButton/>
-                <ResetDataButton resetTo={geoDataStore}/>
+                <ResetDataButton resetTo={initialData}/>
             </div>
             <Map/>
         </GeoJsonDataContext.Provider>
