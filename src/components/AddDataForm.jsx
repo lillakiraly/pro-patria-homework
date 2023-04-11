@@ -34,9 +34,9 @@ function AddDataForm(props) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="new-geojson">Add new GeoJSON data here:</label><br/>
+            <label htmlFor="new-geojson">Add new GeoJSON data:</label><br/>
             <textarea name="geojsondata" id="new-geojson" placeholder="Insert data here..." rows="7" cols="50"/><br/>
-            <span><small>At the moment, Feature and FeatureCollection Objects can be submitted
+            <span><small>At the moment, Feature and FeatureCollection Objects can be submitted.
                     <br/>
                     For more information:
                         <a href="https://www.rfc-editor.org/rfc/rfc7946#section-3.2" target="_blank">check the geoJSON documentation here</a>.
