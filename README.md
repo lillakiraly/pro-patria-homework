@@ -7,7 +7,7 @@
 
 The project uses the Leaflet API as the base for the map, and OpenStreetMap as the tile layer for the map. 
 
-<img src="https://i.imgur.com/ySL06GM.png" width="150px" height="150px"/>
+<img src="https://i.imgur.com/ySL06GM.png" width="400px" height="400px"/>
 
 ## Current features
 - Add new GeoJSON data
