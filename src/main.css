@@ -19,11 +19,3 @@ button {
     padding: 5px 10px;
     border-radius: 7px;
 }
-
-#feat-btn-container {
-    display: flex;
-}
-
-#feat-btn-container button {
-    margin: 10px 5px;
-}
