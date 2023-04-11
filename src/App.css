@@ -1,0 +1,13 @@
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app .feat-btn-container {
+    display: flex;
+}
+
+.app .feat-btn-container button {
+    margin: 10px 5px;
+}

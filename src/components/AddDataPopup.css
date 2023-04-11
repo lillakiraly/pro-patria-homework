@@ -1,0 +1,33 @@
+.add-data-popup .popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.add-data-popup .popup-container {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add-data-popup .popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-bottom: 5px;
+}
+
+.add-data-popup label[for="new-geojson"] {
+    font-size: 1.2em;
+}
