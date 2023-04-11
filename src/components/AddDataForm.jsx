@@ -1,4 +1,4 @@
-import {isFeature} from "geojson-validation";
+import {isFeature, isFeatureCollection} from "geojson-validation";
 import {useContext} from "react";
 import {GeoJsonDataContext} from "../App.jsx";
 
@@ -7,10 +7,10 @@ function AddDataForm(props) {
 
     function addNewGeoJson(geoJsonData) {
         setGeoJsonDataContext(prevState => {
-                return {
+                return [
                     ...prevState,
-                    features: [...prevState.features, geoJsonData]
-                }
+                    geoJsonData
+                ]
             }
         );
     }
@@ -19,7 +19,7 @@ function AddDataForm(props) {
         try {
             const submittedGeoJson = JSON.parse(event.target.geojsondata.value);
 
-            if (isFeature(submittedGeoJson)) {
+            if (isFeature(submittedGeoJson) || isFeatureCollection(submittedGeoJson)) {
                 addNewGeoJson(submittedGeoJson);
                 props.onClose();
 
