@@ -40,7 +40,7 @@ function AddDataPopup(props) {
             <div className="popup-container">
                 <button className="popup-close-btn"
                         onClick={props.onClose}>
-                    CLOSE
+                    X
                 </button>
                 {/*TODO: maybe put the form in a separate component? */}
                 <form onSubmit={handleSubmit}>
