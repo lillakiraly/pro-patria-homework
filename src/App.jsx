@@ -8,18 +8,21 @@ import ResetDataButton from "./components/ResetDataButton.jsx";
 
 function App() {
 
+    const [geoJsonDataContext, setGeoJsonDataContext] = useState(
+        () => JSON.parse(localStorage.getItem("geoData")));
+
     useEffect(() => {
-        if (!localStorage.getItem("geoData")) {
+        if (localStorage.getItem("geoData") === null) {
             const geoDataStoreStr = JSON.stringify(geoDataStore);
             localStorage.setItem("geoData", geoDataStoreStr);
+            setGeoJsonDataContext(geoDataStore);
         }
     }, []);
 
-    const [geoJsonDataContext, setGeoJsonDataContext] = useState(
-        JSON.parse(localStorage.getItem("geoData")));
-
     useEffect(() => {
-        localStorage.setItem("geoData", JSON.stringify(geoJsonDataContext));
+        if (geoJsonDataContext !== "null") {
+            localStorage.setItem("geoData", JSON.stringify(geoJsonDataContext));
+        }
     }, [geoJsonDataContext]);
 
     return (
