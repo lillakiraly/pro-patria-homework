@@ -27,8 +27,10 @@ function App() {
 
     return (
         <GeoJsonDataContext.Provider value={{geoJsonDataContext, setGeoJsonDataContext}}>
-            <AddDataButton/>
-            <ResetDataButton resetTo={geoDataStore} />
+            <div id="feat-btn-container">
+                <AddDataButton/>
+                <ResetDataButton resetTo={geoDataStore}/>
+            </div>
             <Map/>
         </GeoJsonDataContext.Provider>
     )
