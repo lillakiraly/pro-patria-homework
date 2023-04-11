@@ -4,6 +4,7 @@ import "leaflet/dist/leaflet.css";
 import geoDataStore from "../data/geojson/geodatastore.json";
 import AddDataButton from "./components/AddDataButton.jsx";
 import ResetDataButton from "./components/ResetDataButton.jsx";
+import "./App.css";
 
 
 function App() {
