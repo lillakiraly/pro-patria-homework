@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import "./DataPopup.css";
 
 function DataPopup(props) {
     const properties = props.feature.properties;
@@ -7,7 +8,7 @@ function DataPopup(props) {
         return (
             <ul>
                 {Object.keys(properties).map((key) => (
-                    <li key={uuidv4()}><strong>{key}</strong>: {properties[key]}</li>
+                    <li key={uuidv4()}><span className="property">{key}</span>: {properties[key]}</li>
                 ))}
             </ul>
         )
